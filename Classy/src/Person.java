@@ -1,4 +1,7 @@
-
+/**
+ * @version: 1.0
+ * @author Nicholas Hays
+ **/
 public class Person {
 	String myName;
 	StringBuilder myClass;

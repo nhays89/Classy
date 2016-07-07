@@ -40,7 +40,7 @@ public class ClassyMain {
 		}
 		System.out.println();
 		
-		Collections.sort(thePeople, new ClassComparator());
+		Collections.sort(thePeople, new ClassyComparator());
 		
 		for(int i = 0; i < thePeople.size(); i++) {
 			System.out.println("Name: " + thePeople.get(i).myName + "; the class: " + thePeople.get(i).myClass);
