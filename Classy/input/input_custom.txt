@@ -1,0 +1,6 @@
+4
+greg: lower upper middle class
+john: middle upper lower class
+kim: lower middle upper class
+kevin: lower upper middle middle class
+
