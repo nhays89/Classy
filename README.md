@@ -2,6 +2,7 @@
 
 Division I ACM ICPC programming problem.
 
+![classy](https://github.com/nhays89/Classy/blob/master/Classy/img/classy.PNG)
 ##Problem
 
 In his memoir So, Anyway. . . , comedian John Cleese writes of the class difference between his father
