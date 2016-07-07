@@ -99,7 +99,7 @@ The techniques required to solve this problem consist of: string manipulation, s
 
 ###General Idea
 
-
+The general approach to solving this problem first requires a conversion of classes to integer representations. For each person listed in the input set create a Person object with a String representing their name and StringBuilder object to hold their class. The StringBuilder object will be used to compare Person's classes, however, it is not practical to compare entire strings. Therefore, convert the classes ('upper', 'middle', 'lower') to '3', '2', '1' respectively as input is scanned in from stdin. For instance, if Bob's class is 'upper lower middle upper upper middle middle class' it will be converted to '3123322'. Next, because [compareTo](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#compareTo(java.lang.String)) compares from left to right starting at charAt(0) we must reverse the strings to start the comparison in the appropriate index. For instance, using Bob's class from above our string now looks like: 2233213 or 'middle middle upper upper middle lower upper'. Now we can compare Person objects based on ascii values using the provided compareTo method in the String class. The ClassyComparator object provides this implementation. ClassyComparator implements Comparator<Person>, and thus @Overrides the compare method.  In this method block, we first compare objects on their classes, but if two objects have the same class then we use the compareTo method provided by the String class which will place Person's names in lexicographic order. 
 
 ---
 2015 Pacific Northwest Region Programming Contest—Division 1 
